@@ -32,42 +32,45 @@
 
 </head>
 	<body>
-	
-		<nav  class = "navbar navbar-default" role="navigation"> 
-			<div  class= "container-fluid" > 
-				<div  class= "navbar-header page-scroll" "col-xs-12 .col-sm-6 .col-md-8"> 
-					<a  class= "navbar-brand"> 
-						<img style="max-width:200px; margin-top: -7px;"
-						src="imagenes/logotipo1.png" width="400px"/> 
-					</a> 
-				</div> 
-			</div> 
-		</nav>
-		
-		<div class="col-md-1-1-1-1">
-							<ul class="nav nav-tabs nav-justified">
-								<li role="presentation" class="active"><a href="#">Inicio</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-											Servicios <b class="caret"></b>
-										</a>
-										<ul class="dropdown-menu">
-											  <li><a href="Itinerario.php">Consulta itinerarios</a></li>
-											  <li><a href="EstadodeVuelos.php">Consulta vuelos</a></li>
-											<li><a href="#">Promociones</a></li>
-										</ul>
-									</li>
-							
-								<li role="presentation"><a href="perfil.php">Información Corporativa</a></li>
-							</ul>
-		</div>
+			
+				<nav  class = "navbar navbar-default navbar-static-top" role="navigation" > 
+					<div  class= "container-fluid" > 
+						<div  class= "navbar-header page-scroll"> 
+							<a  class= "navbar-brand" > 
+								<img style="max-width:400px; margin-top: -35px;"
+								src="imagenes/logotipo.png" width="1050px"/> 
+								
+							</a> 
+						</div> 
+						
+					</div> 
+				</nav>
+				
+				<div class="col-md-1-1-1-1">
+									<ul class="nav nav-tabs nav-justified" >
+										<li role="presentation" class="active"><a href="#">Inicio</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													Servicios <b class="caret"></b>
+												</a>
+												<ul class="dropdown-menu">
+													  <li><a href="Itinerario.php">Consulta itinerarios</a></li>
+													  <li><a href="EstadodeVuelos.php">Consulta vuelos</a></li>
+													<li><a href="#">Promociones</a></li>
+												</ul>
+											</li>
+									
+										<li role="presentation"><a href="perfil.php">Información Corporativa</a></li>
+									</ul>
+				</div>
+			
 		
 		<header>
-			<div class="container"  style="overflow: hidden; position: relative; width: 1380px; height: 752.016666666667px;">
+			<div class="container"  style="overflow: hidden; position: relative; width: 1365.5px; height:517.444444444;">
 				<div class="row">
 					
 			
-						<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position: relative; left: 0px; width: 1400px; height: 652.016666666680px;">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel" >
 								  <!-- Indicators -->
 								  <ol class="carousel-indicators">
 									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -79,7 +82,7 @@
 								  <!-- Wrapper for slides -->
 								   <div class="carousel-inner" role="listbox">
 										<div class="item active">
-										  <img src="imagenes/197.jpg" alt="Chania" width="100%">
+										  <img src="imagenes/197.jpg" alt="Chania">
 										</div>
 
 										<div class="item">
@@ -115,7 +118,17 @@
         </header>
 	
 	
-	<div class="col-md-6">
+	
+	
+	
+							<?php
+								if (isset($_POST['Buscar'])) {
+									require ("SeleccionarVuelos.php");
+								}
+							?>
+							
+							
+							<div class="col-md-6">
 				<form  role ="form"  method="post" action="buscarVuelo.php" method="post" enctype="application/x-www-form-urlencoded">
 					
 						<br>
@@ -235,30 +248,23 @@
 
 				
 				
-						</div>
 						
-							<div class="col-xs-12 .col-sm-6 .col-md-8">
+						
+						<div class="col-xs-12 .col-sm-6 .col-md-8">
 							<br><br>
 							<br>
 							
 							
 						
 							
-							
+								
 						</div>
 		
 		
 			
 					
-					</div>
+					
 				</form>	
-		<!--</div> --->
-	
-	
-							<?php
-								if (isset($_POST['Buscar'])) {
-									require ("SeleccionarVuelos.php");
-								}
-							?>
+	</div>
 	</body>
 </html>
