@@ -1,0 +1,14 @@
+.carrousell{
+
+position: fixed;
+z-index: -2;
+height : 30%;
+width : 100px;
+
+}
+
+.carousel-inner{
+position: absolute;
+z-index: -1;
+
+}
