@@ -175,7 +175,7 @@
 							<div class='col-sm-6'>
 								<br>
 								<label>Fecha Regreso</label>
-								<input type='date'/>
+								<input name="FechaRegreso" type='date'/>
 							</div>	
 							
 						<br>
@@ -185,7 +185,7 @@
 								<label>Personas que viajan </label>
 								<br>
 								
-								<select name="Adultos que Viajan">
+								<select name="adultos">
 									<option> 1 adulto</option>
 									<option>2</option>
 									<option>3</option>
@@ -201,7 +201,7 @@
 								<br>
 								<br>
 								
-								<select name="niños que Viajan">
+								<select name="niños">
 									<option>Ningun niño</option>
 									<option>1 niño</option>
 									<option>2</option>
