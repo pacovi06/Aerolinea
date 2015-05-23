@@ -11,14 +11,42 @@
 	
 	</head>
 	
-<BODY BACKGROUND="simple-azul.jpg" BGPROPERTIES="fixed">
+<BODY background="imagenes/simple-azul.jpg">
 	<div class="container">
-			<div class="row">
-				<div class="col-xs-6 .col-md-4">
+			<nav  class = "navbar navbar-default navbar-static-top" role="navigation" > 
+					<div  class= "container-fluid" > 
+						<div  class= "navbar-header page-scroll"> 
+							<a  class= "navbar-brand" > 
+								<img style="max-width:400px; margin-top: -35px;"
+								src="imagenes/logotipo.png" width="1050px"/> 
+								
+							</a> 
+						</div> 
+						
+					</div> 
+			</nav>
+				<br>
+				<div class="col-md-1-1-1-1">
+									<ul class="nav nav-tabs nav-justified" >
+										<li><a href="index.php">Inicio</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													Servicios <b class="caret"></b>
+												</a>
+												<ul class="dropdown-menu">
+													  <li role="presentation" class="active"><a href="#">Consulta itinerarios</a></li>
+													  <li><a href="EstadodeVuelos.php">Consulta vuelos</a></li>
+													<li><a href="#">Promociones</a></li>
+												</ul>
+											</li>
+									
+										<li role="presentation"><a href="perfil.php">Información Corporativa</a></li>
+									</ul>
 				</div>
+				
 					<div class="col-xs-12 .col-sm-6 .col-md-8">
 						<br>
-						<img src="imagenes/banner.jpg" class="img-rounded" WIDTH=1130><br><br>
+						
 						  <h1> <span class="glyphicon glyphicon-search"></span> <font color="#000080">Consulta de itinerario​s</font> </h1> 
 					 
 						
@@ -115,8 +143,9 @@
 							
 						<div class="col-xs-6">
 							<br>
-							<br>
+							
 							<button type="submit" name="Consultar" class="btn btn-default btn-lg active" value="envia-POST">Consultar</button>
+							<br>
 						</div>	
 					</div>
 
